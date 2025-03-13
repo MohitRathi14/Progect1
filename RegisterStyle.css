@@ -1,0 +1,52 @@
+/* Register button - if you want a different color for the register button */
+.register-btn {
+    background-color: #34a853;
+}
+
+.register-btn:hover {
+    background-color: #2d9249;
+}
+
+/* Password strength indicator (optional enhancement) */
+.password-strength {
+    height: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.strength-weak {
+    width: 33%;
+    background-color: #f44336;
+}
+
+.strength-medium {
+    width: 66%;
+    background-color: #ffa000;
+}
+
+.strength-strong {
+    width: 100%;
+    background-color: #34a853;
+}
+
+/* Terms and conditions checkbox (optional) */
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    font-size: 14px;
+}
+.login-container{
+    height:515px
+}
