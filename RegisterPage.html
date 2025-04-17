@@ -13,9 +13,9 @@
 <!--In RegisterPage.html-->
 <div class="login-container">
     <h2>Create an Account</h2>
-    <form class="login-form">
+    <form class="login-form" action="/crate-new-user" method="post">
         <div class="form-group">
-            <label for="username">Username:</label>
+            <label for="Username">Username:</label>
             <input type="text" id="username" name="username" required>
         </div>
 
@@ -34,7 +34,7 @@
             <input type="password" id="confirm-password" name="confirm-password" required>
         </div>
 
-        <button class="login-btn register-btn">Register</button>
+        <button type="submit" class="login-btn register-btn">Register</button>
 
         <div class="form-footer">
             <p>Already have an account? <a href="Login.html">Login Here</a></p>
