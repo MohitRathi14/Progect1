@@ -1,5 +1,5 @@
-const userModel = require("../models/userModel");
-const sendMail = require("../services/sendMail");
+const userModel = require("../Module/userModule");
+const sendMail = require("../service/sendMail");
 const jwt = require('jsonwebtoken');
 const JWT_SECRET='this_is_top_Secret  ';
 const userRegister = async(username, email, password)=>{
@@ -14,7 +14,7 @@ const userRegister = async(username, email, password)=>{
             passsword: password,
             isActive: false,
           });
-          // await newUser.save();
+          await newUser.save();
           sendMail(email, username)
           console.log("register success");
         }

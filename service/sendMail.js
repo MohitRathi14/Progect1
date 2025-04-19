@@ -4,8 +4,8 @@ const JWT_SECRET='this_is_top_Secret';
 const sendMail = (email, userName)=>{    const mailTransport = nodemailer.createTransport({
         service:"gmail",
         auth:{
-            user:"test.duck.mail@gmail.com",
-            pass:"tneelcbewgryosum"
+            user:"asmit342sumit@gmail.com",
+            pass:"sxhplxchvuevyqdk"
         }
     })
 
@@ -14,8 +14,8 @@ const sendMail = (email, userName)=>{    const mailTransport = nodemailer.create
     const verificationLink = `http://localhost:1234/verify-email?id=${id}`
     
     const mailToSend = ({
-        from:"test.duck.mail@gmail.com",
-        to:email,
+        from:"asmit342sumit@gmail.com",
+        to: email,
         subject:"Verification Mail From Sec-F",
         html: `<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4;">
     <div style="max-width: 600px; margin: auto; background: #ffffff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">

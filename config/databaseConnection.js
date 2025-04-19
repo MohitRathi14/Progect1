@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const dbconn = mongoose
   .connect(
-    "mongodb+srv://piebytwo014:piebytwo014@cluster0.n8om1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://aaditya375singh2:mohit@cluster0.habcc3c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   )
   .then(() => {
     console.log("Database connection Success");
