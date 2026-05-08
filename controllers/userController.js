@@ -11,7 +11,7 @@ const userRegister = async(username, email, password)=>{
           const newUser = new userModel({
             userName: username,
             email: email,
-            passsword: password,
+            password: password,
             isActive: false,
           });
           await newUser.save();
@@ -28,11 +28,11 @@ const userLogin = async(email, password)=>{
     try {
         const user = await userModel.findOne({ email: email });
         if (user) {
-          if (user.passsword == password && user.isActive) {
+          if (user.password === password && user.isActive) {
                  res.redirect("/dashboard");
-          } else if (user.passsword == password && !user.isActive) {
+          } else if (user.password === password && !user.isActive) {
             console.log("Please verify your email");
-          } else if (user.passsword != password) {
+          } else if (user.password !== password) {
             console.log("Password is invalid ");
           }
         } else {
@@ -52,7 +52,7 @@ const emailVerification = (mail_id)=>{
     
   } catch (error) {
     if(jwt.TokenExpiredError){
-      console.log("TOken is expired")
+      console.log("Token is expired")
     }else{
       console.log(error)
     }
